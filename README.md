@@ -17,6 +17,7 @@ Exponential Growth Model
 Formula: P(t) = P₀ * e^(rt)
 Assumes unlimited resources and constant growth rate
 Ideal for modeling populations in early stages or resource-rich environments
+
 Logistic Growth Model
 
 Formula: P(t) = K / (1 + (K/P₀ - 1) * e^(-rt))
@@ -29,6 +30,7 @@ P₀ is the initial population
 r is the growth rate
 K is the carrying capacity (for logistic growth)
 t is the time in years since the initial population
+
 🌟 Features
 Interactive Visualizations: Dynamic charts showing population growth over time
 Model Comparison: Side-by-side comparison of exponential and logistic growth patterns
@@ -36,6 +38,7 @@ Real-world Data Analysis: Sample data for six countries (Japan, South Korea, USA
 Educational Content: Detailed explanations of growth formulas and their parameters
 Responsive Design: Optimized for various screen sizes and devices
 User-friendly Interface: Intuitive controls for adjusting model parameters
+
 🛠️ Technologies Used
 Frontend:
 
@@ -47,10 +50,14 @@ UI Components: shadcn/ui
 Data Visualization: Recharts
 State Management: React Hooks
 Build Tool: Bun
+Python
+
 📋 Requirements
 Node.js (v14 or later)
 Bun (latest version)
 Modern web browser (Chrome, Firefox, Safari, or Edge)
+Python
+
 🧩 Components
 Layout Component: Provides the overall structure for the application
 Header Component: Navigation and branding
@@ -60,20 +67,25 @@ PopulationModelingTool Component: Allows users to experiment with growth models
 Card Components: Used for presenting information in a structured manner
 Button Components: Interactive elements for user actions
 Chart Components: Visualize population data and growth models
+
 🚀 Getting Started
 Installation
+
 Clone the repository:
 
 git clone https://github.com/your-username/popgrowth-ai.git
 cd popgrowth-ai
+
 Install dependencies:
 
 bun install
 Running the Application
+
 Start the development server:
 
 bun run dev
 Open your browser and navigate to http://localhost:3000
+
 📖 Usage
 Explore Sample Data:
 
@@ -89,6 +101,7 @@ Learn About Models:
 
 Read the educational content provided on each page
 Understand the formulas and their implications in real-world scenarios
+
 🤝 Contributing
 We welcome contributions to PopGrowth AI! Please follow these steps:
 
@@ -97,6 +110,7 @@ Create a new branch: git checkout -b feature-branch-name
 Make your changes and commit them: git commit -m 'Add some feature'
 Push to the branch: git push origin feature-branch-name
 Submit a pull request
+
 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
@@ -104,6 +118,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 Developed by Nirupam Thapa a.k.a kuoki
 GitHub: https://github.com/kuokiii
 Instagram: https://instagram.com/_kuoki/
+
 📞 Contact
 For any queries or suggestions, please reach out to:
 
