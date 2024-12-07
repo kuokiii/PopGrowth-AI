@@ -7,8 +7,6 @@
 |  __/| |_| |  __/| |_| | |_| |   | |      / /  ___) |  _  |  / ___ \ | | 
 |_|    \___/|_|    \____|\____|   |_|     /_/  |____/|_| |_| /_/   \_\___|
 
-
-
 PopGrowth AI is an advanced, interactive web application that models and visualizes population growth using differential equations. This project aims to educate users about exponential and logistic growth models, providing deep insights into real-world population dynamics.
 
 📊 Models
@@ -111,8 +109,8 @@ For any queries or suggestions, please reach out to:
 
 Nirupam Thapa
 
-Email: your.email@example.com
-Twitter: @your_twitter_handle
+Email: niruwu2006@gmail.com
+Instagram: https://instagram.com/_kuoki/
 Thank you for your interest in PopGrowth AI! We hope this tool helps in understanding and visualizing population growth dynamics. Happy exploring! 🚀🌍
 
 
