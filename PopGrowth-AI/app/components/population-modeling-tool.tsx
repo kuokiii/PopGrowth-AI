@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 import { motion } from 'framer-motion'
+import { Label } from "@/components/ui/label"
 
 interface PopulationModelingToolProps {
   initialModelType?: 'exponential' | 'logistic'
@@ -63,33 +64,49 @@ export default function PopulationModelingTool({ initialModelType = 'exponential
                   <SelectItem value="logistic">Logistic Growth</SelectItem>
                 </SelectContent>
               </Select>
-              <Input
-                type="number"
-                value={initialPopulation}
-                onChange={(e) => setInitialPopulation(Number(e.target.value))}
-                placeholder="Initial Population"
-              />
-              <Input
-                type="number"
-                value={growthRate}
-                onChange={(e) => setGrowthRate(Number(e.target.value))}
-                placeholder="Growth Rate"
-                step="0.01"
-              />
-              {modelType === 'logistic' && (
+              <div className="grid gap-2">
+                <Label htmlFor="initial-population">Initial Population</Label>
                 <Input
+                  id="initial-population"
                   type="number"
-                  value={carryingCapacity}
-                  onChange={(e) => setCarryingCapacity(Number(e.target.value))}
-                  placeholder="Carrying Capacity"
+                  value={initialPopulation}
+                  onChange={(e) => setInitialPopulation(Number(e.target.value))}
+                  placeholder="Enter starting population (e.g. 1000)"
                 />
+              </div>
+              <div className="grid gap-2">
+                <Label htmlFor="growth-rate">Growth Rate</Label>
+                <Input
+                  id="growth-rate"
+                  type="number"
+                  value={growthRate}
+                  onChange={(e) => setGrowthRate(Number(e.target.value))}
+                  placeholder="Enter growth rate (e.g. 0.05 for 5%)"
+                  step="0.01"
+                />
+              </div>
+              {modelType === 'logistic' && (
+                <div className="grid gap-2">
+                  <Label htmlFor="carrying-capacity">Carrying Capacity</Label>
+                  <Input
+                    id="carrying-capacity"
+                    type="number"
+                    value={carryingCapacity}
+                    onChange={(e) => setCarryingCapacity(Number(e.target.value))}
+                    placeholder="Enter maximum sustainable population"
+                  />
+                </div>
               )}
-              <Input
-                type="number"
-                value={timeSpan}
-                onChange={(e) => setTimeSpan(Number(e.target.value))}
-                placeholder="Time Span"
-              />
+              <div className="grid gap-2">
+                <Label htmlFor="time-span">Time Span (years)</Label>
+                <Input
+                  id="time-span"
+                  type="number"
+                  value={timeSpan}
+                  onChange={(e) => setTimeSpan(Number(e.target.value))}
+                  placeholder="Enter simulation duration in years"
+                />
+              </div>
             </div>
             <Button onClick={runSimulation} className="mt-4 w-full">Run Simulation</Button>
           </CardContent>
@@ -124,4 +141,6 @@ export default function PopulationModelingTool({ initialModelType = 'exponential
     </div>
   )
 }
+
+
 
